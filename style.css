@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 @font-face {
-  font-family: 'Fashion Victim';
-  src: url(fonts/fashion-victim.woff2) format('woff2');
+  font-family: "Fashion Victim";
+  src: url(fonts/fashion-victim.woff2) format("woff2");
 }
 
 * {
@@ -22,6 +22,9 @@ body {
   max-width: 840px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -33,7 +36,7 @@ header {
 }
 
 h1.site-title {
-  font-family: 'Fashion Victim';
+  font-family: "Fashion Victim";
   font-size: 6rem;
   font-weight: normal;
   text-align: center;
@@ -52,27 +55,38 @@ h1.site-title span {
 .product__image {
   width: 6rem;
   height: auto;
+  margin-bottom: 30px;
 }
 
-/* .t-shirt {
+.t-shirt {
   stroke: #000;
   stroke-width: 2;
-} */
+}
 
-.color-option__box{
+.color-option__box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.btn,
 .color-button {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
-},:hover:focus{
-  cursor: pointer;
+  width: 100px;
 }
 
+.btn--action {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: white;
+  border: 2px solid grey;
+}
 
-
+.btn--action:hover,
+.btn--action:active {
+  background-color: rgb(101, 253, 0);
+}
