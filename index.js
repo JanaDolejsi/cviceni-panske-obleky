@@ -30,6 +30,7 @@ const redBtn = document.getElementById("redBtn");
 const blueBtn = document.getElementById("blueBtn");
 const yellowBtn = document.getElementById("yellowBtn");
 const greenBtn = document.getElementById("greenBtn");
+const nakup = document.querySelector(".btn--action");
 
 // variables declaration
 let chosenColor;
