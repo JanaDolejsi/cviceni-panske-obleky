@@ -19,6 +19,7 @@ buttons.forEach(function(button) {
   });
 });
 //konec Janči varianty
+*/
 
 //Varianta bez znalosti array a for loop, není moc DRY, ale funguje
 // element chosen
@@ -69,8 +70,8 @@ greenBtn.addEventListener("click", function () {
   chosenColor = color;
 });
 // konec dlouhé varianty
-*/
 
+/*
 // Varianta se znalostí array a for loop
 // element chosen
 const shirt = document.getElementById("product-image");
@@ -91,7 +92,9 @@ for (let i = 0; i < colorPool.length; i++) {
     chosenColor = color;
   });
 }
+*/
 
+// alert pro tlačítko Koupit
 nakup.addEventListener("click", function () {
   alert(`Děkujeme za nákup košile v barvě ${chosenColor}`);
 });
