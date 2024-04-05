@@ -54,10 +54,10 @@ h1.site-title span {
   height: auto;
 }
 
-.t-shirt {
+/* .t-shirt {
   stroke: #000;
   stroke-width: 2;
-}
+} */
 
 .color-option__box{
   display: flex;
