@@ -18,6 +18,7 @@ buttons.forEach(function(button) {
     changeColor(color);
   });
 });
+//konec Janči varianty
 
 //Varianta bez znalosti array a for loop, není moc DRY, ale funguje
 // element chosen
@@ -67,11 +68,13 @@ greenBtn.addEventListener("click", function () {
   shirt.style = `fill: ${color}`;
   chosenColor = color;
 });
+// konec dlouhé varianty
 */
 
 // Varianta se znalostí array a for loop
 // element chosen
 const shirt = document.getElementById("product-image");
+const nakup = document.querySelector(".btn--action");
 
 // variables declaration
 let chosenColor;
@@ -79,6 +82,7 @@ let chosenColor;
 // pole barev
 const colorPool = ["white", "black", "red", "blue", "yellow", "green"];
 
+// funcionality of colorBtns
 for (let i = 0; i < colorPool.length; i++) {
   const clickedBtn = document.getElementById(`${colorPool[i]}Btn`);
   clickedBtn.addEventListener("click", function () {
@@ -87,3 +91,7 @@ for (let i = 0; i < colorPool.length; i++) {
     chosenColor = color;
   });
 }
+
+nakup.addEventListener("click", function () {
+  alert(`Děkujeme za nákup košile v barvě ${chosenColor}`);
+});
