@@ -58,3 +58,21 @@ h1.site-title span {
   stroke: #000;
   stroke-width: 2;
 }
+
+.color-option__box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn,
+.color-button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+},:hover:focus{
+  cursor: pointer;
+}
+
+
+
