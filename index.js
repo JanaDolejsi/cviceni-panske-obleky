@@ -87,9 +87,8 @@ const colorPool = ["white", "black", "red", "blue", "yellow", "green"];
 for (let i = 0; i < colorPool.length; i++) {
   const clickedBtn = document.getElementById(`${colorPool[i]}Btn`);
   clickedBtn.addEventListener("click", function () {
-    const color = this.getAttribute("data-color");
-    shirt.style = `fill: ${color}`;
-    chosenColor = color;
+    shirt.style = `fill: ${colorPool[i]}`;
+    chosenColor = colorPool[i];
   });
 }
 */
